@@ -8,6 +8,12 @@ Special thanks to Caedo: https://github.com/Caedo/raylib_wasm_odin
 
 ---
 
+NOTE: This is the original jam code. 
+
+Main repo is here https://github.com/avelican/boxfight
+
+---
+
 ## WARNING
 
 This was written for a game jam: [Low Level Game Dev's 7 day multiplayer game challenge](https://www.youtube.com/watch?v=NbhYi_I5T4A).
@@ -16,13 +22,21 @@ Do not expect sanity from anything you find here!
 
 The server does not verify client inputs, so players can exercise their "creativity".
 
+(Also, WASM-JS interop is surprisingly tedious and error-prone.)
+
 ---
 
 ## NOTE
 
-The game server will randomly assign you a world ( e.g. /123456 ).
+~~The game server will randomly assign you a world ( e.g. /123456 ).~~
 
-You can send this to your friends to play together.
+~~You can send this to your friends to play together.~~
+
+Edit: Rooms disabled due to lack of time. Sorry!
+
+There was only one users array, which wouldn't work with multiple rooms.
+
+If you add one users array per game, you can re-enable the rooms logic.
 
 ---
 
@@ -65,6 +79,10 @@ Software Automatic Mouth is reverse engineered from proprietary software, so *te
 ---
 
 ## TODO
+
+NOTE: This repo probably won't get any updates, but these TODOs are kept for your inspiration.
+
+(These bugs are probably fixed in the main repo)
 
 TODO: web audio: sounds get queued and play on first interaction
 
